@@ -8,7 +8,13 @@ public class Kadai05 {
 	 * @return ”z—ñ‚Ì’†‚ÌÅ‘å’l
 	 */
 	int getMax(int[] d) {
-		
-		return -1;
+		int max =d[0];
+
+		for(int i = 1; i < d.length; i++) {
+			if(max < d[i]) {
+				max = d[i];
+			}
+		}
+		return max;
 	}
 }
