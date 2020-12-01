@@ -9,6 +9,13 @@ public class Kadai02 {
 	 * @return s‚Ì’†‚É“ü‚Á‚Ä‚¢‚½c‚Ì•¶š”
 	 */
 	int countString(String s,char c) {
-		return -1;
+		int count=0;
+
+		for(char x: s.toCharArray()) {
+			if(x == c) {
+				count ++;
+			}
+		}
+		return count;
 	}
 }
