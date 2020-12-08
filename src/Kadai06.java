@@ -13,19 +13,21 @@ public class Kadai06 {
 				max = d[i];
 			}
 		}
-		int max2 = d[0];
-		for (int i = 0; i < d.length; i++) {
-			if (max2 ==max) {
-				max2 =d[1];
-			}
+
+		int max2;
+		if (d[0] == max) {
+			max2 = d[1];
+		}else {
+			max2 = d[0];
+		}
 			for (int j = 0; j < d.length; j++) {
 				if (d[j] != max) {
-
-
+					if(max2 < d[j]) {
+						max2 = d[j];
+					}
 				}
 			}
+			return max2;
 		}
 
-		return max2;
-	}
 }
