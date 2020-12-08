@@ -8,7 +8,9 @@ public class Kadai01 {
 	 * @return 左右を反転した結果
 	 */
 	String ReverseString(String s) {
-		//TODO プログラムをここに作成する
-		return "";
+		StringBuffer dest=new StringBuffer();
+		for(int i=s.length()-1; i>=0; i--)
+			dest.append(s.charAt(i));
+		return dest.toString();
 	}
 }
