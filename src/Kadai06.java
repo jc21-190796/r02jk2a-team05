@@ -7,7 +7,13 @@ public class Kadai06 {
 	 * @return 配列の中の降順で2番目の値
 	 */
 	int get2ndMax(int[] d) {
+		if (d.length == 0) {
+			System.out.println("この配列は空っぽです。");
+		}
 		int max = d[0];
+		if (d.length <=1) {
+			System.out.println("この配列にはデータが2つ以上入っていません。");
+		}
 		for(int i = 1; i < d.length; i++) {
 			if(max < d[i]) {
 				max = d[i];
