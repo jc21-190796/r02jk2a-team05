@@ -3,14 +3,14 @@ import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class Kadai05Test {
+class Kadai04Test {
 
 	@Test
 	void testGetMax() {
-		Kadai05 k = new Kadai05();
-		int [] q = {1,2,3,4,1,12,12,-100};
-		int i1 = k.getMax(q);
-		assertThat(i1,is(12));
+		Kadai04 k = new Kadai04();
+		String s = " ";
+		char i1 = k.getMaxString(s);
+		assertThat(i1,is(' '));
 
 	}
 
