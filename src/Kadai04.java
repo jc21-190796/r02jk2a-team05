@@ -1,5 +1,7 @@
 public class Kadai04 {
 
+	public char c;
+
 	/**
 	 * 課題04
 	 * 文字列の中に含まれるアルファベットの中で、一番多く使われている文字を返す
@@ -8,6 +10,7 @@ public class Kadai04 {
 	 */
 	char getMaxString(String s) {
 
+
 		char a[] = s.toCharArray();
 		int max = 0;
 		char ch = a[0];
@@ -15,15 +18,20 @@ public class Kadai04 {
 		for (int i = 0; i < a.length-1; i++) {
 			int count = 1;
 
-			for (int j = 1; j < a.length; j++) {
+			for (int j = 0; j < a.length; j++) {
 
 				if (a[i] == a[j]) {
 					count++;
 				}
 
 				if (count > max) {
-					if (a[i] < cha) {
+					c =a[i];
+					max = count;
+				}
 
+				if (count == max) {
+					if (a[i] < c) {
+						c = a[i];
 					}
 
 				}
@@ -32,10 +40,6 @@ public class Kadai04 {
 
 		}
 
-
-
-
-		char c = ' ';
 		return c;
 	}
 }
