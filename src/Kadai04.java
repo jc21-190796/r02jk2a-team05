@@ -10,14 +10,21 @@ public class Kadai04 {
 	 */
 	char getMaxString(String s) {
 
+		if ("".equals(s)) {
+			System.out.println("null");
+		}
+
+		if (" ".equals(s)) {
+			System.out.println("null");
+		}
 
 		char a[] = s.toCharArray();
 		int max = 0;
 		char ch = a[0];
 		char cha ;
 		for (int i = 0; i < a.length-1; i++) {
-			int count = 1;
 
+			int count = 1;
 			for (int j = 0; j < a.length; j++) {
 
 				if (a[i] == a[j]) {

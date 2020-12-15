@@ -8,9 +8,9 @@ class Kadai04Test {
 	@Test
 	void testGetMax() {
 		Kadai04 k = new Kadai04();
-		String s = "aikasi";
+		String s = " ";
 		char i1 = k.getMaxString(s);
-		assertThat(i1,is('a'));
+		assertThat(i1,is(' '));
 
 	}
 
