@@ -12,7 +12,7 @@ class Kadai02Test {
 		assertEquals(0,k.countString("12345",'A'));
 		assertEquals(2,k.countString("AABC",'A'));
 		assertEquals(2,k.countString("ABCabc",'A'));
-
+		//assertNotNull(k.countString("abc", null));
 	}
 
 }

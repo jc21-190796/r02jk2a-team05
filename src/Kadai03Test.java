@@ -8,8 +8,10 @@ class Kadai03Test {
 	void testReverseString() {
 		Kadai03 k = new Kadai03();
 
-		assertEquals("A,E,L,P",k.CharacterList("APPLE"));
-
+		assertArrayEquals( new  char[] { 'A','E','L','P'},k.CharacterList("APPLE"));
+		assertArrayEquals( new  char[] { 'A','E','L','P'},k.CharacterList("apple"));
+		assertArrayEquals( new  char[] { 'A','E','L','P'},k.CharacterList("ApPle001"));
+		assertArrayEquals( new  char[] { 'A'},k.CharacterList("AAAAAA"));
 	}
 
 }

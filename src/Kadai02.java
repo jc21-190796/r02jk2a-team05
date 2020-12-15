@@ -9,7 +9,7 @@ public class Kadai02 {
 	 * @return sの中に入っていたcの文字数
 	 */
 	int countString(String s,char c) {
-
+		try {
 		int count=0;
 		String s1 = s.toUpperCase();//大文字に変換
 		for(char x: s1.toCharArray()) {
@@ -19,5 +19,9 @@ public class Kadai02 {
 			}
 		}
 		return count;
+	}catch(NullPointerException e) {
+		System.out.println("値が入力されていません");
+		return -1;
+	}
 	}
 }
