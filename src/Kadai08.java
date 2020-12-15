@@ -13,6 +13,11 @@ public class Kadai08 {
 	 * @return 妥当であればtrue
 	 */
 	boolean isDate(String s) {
-		return false;
+
+			return false;
+
+
+
+
 	}
 }
