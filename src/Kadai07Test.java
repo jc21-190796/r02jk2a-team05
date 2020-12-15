@@ -8,7 +8,7 @@ class Kadai07Test {
 	@Test
 	void testisNumeric() {
 		Kadai07 k = new Kadai07();
-		String s = "7777888213333333";
+		String s = "54564564";
 		boolean i1 = k.isNumeric(s);
 		assertThat(i1,is(true));
 	}
