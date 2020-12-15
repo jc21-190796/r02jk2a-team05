@@ -9,9 +9,11 @@ public class Kadai02 {
 	 * @return sの中に入っていたcの文字数
 	 */
 	int countString(String s,char c) {
-		int count=0;
 
-		for(char x: s.toCharArray()) {
+		int count=0;
+		String s1 = s.toUpperCase();//大文字に変換
+		for(char x: s1.toCharArray()) {
+
 			if(x == c) {
 				count ++;
 			}
