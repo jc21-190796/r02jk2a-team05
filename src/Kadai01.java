@@ -9,9 +9,15 @@ public class Kadai01 {
 	 */
 	String ReverseString(String s) {
 		StringBuffer dest=new StringBuffer();
-		for(int i=s.length()-1; i>=0; i--)
-			dest.append(s.charAt(i));
-		return dest.toString();
+
+		try{
+			for(int i=s.length()-1; i>=0; i--)
+				dest.append(s.charAt(i));
+			return dest.toString();
+		}catch(NullPointerException e){
+			System.out.println("値が入力されていません。");
+			return "0";
+		}
 
 	}
 }
