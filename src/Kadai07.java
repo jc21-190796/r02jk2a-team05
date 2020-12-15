@@ -1,4 +1,8 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Kadai07 {
+
 
 	/**
 	 * 課題07
@@ -7,7 +11,12 @@ public class Kadai07 {
 	 * @return 半角数字のみで構成されていたらtrue
 	 */
 	boolean isNumeric(String s) {
-		
-		return false;
-	}
-}
+		String suji = "^[0-9]";
+		 boolean result = true;
+		    if( s == null || s.isEmpty() ) return false ;
+
+		    Pattern p1 = Pattern.compile(suji);
+		    Matcher m1 = p1.matcher(s);
+		    return result;
+		  }
+		}

@@ -21,7 +21,6 @@ public class Kadai04 {
 		char a[] = s.toCharArray();
 		int max = 0;
 		char ch = a[0];
-		char cha ;
 		for (int i = 0; i < a.length-1; i++) {
 
 			int count = 1;
