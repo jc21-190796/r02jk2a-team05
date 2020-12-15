@@ -8,6 +8,9 @@ public class Kadai10 {
 	 * @return 指定した文字数以上の部分を削除して”…"に置き換えた文字列
 	 */
 	String replaceLongString(String s , int size) {
-		return null;
+		String str ="abcdefghijk";
+		String name = str.substring(0,5);
+		System.out.println(name);
+		return "…";
 	}
 }
