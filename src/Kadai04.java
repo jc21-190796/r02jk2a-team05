@@ -44,6 +44,8 @@ public class Kadai04 {
 
 			}
 
+			count = 1;
+
 		}
 
 		return c;
